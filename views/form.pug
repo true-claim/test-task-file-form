@@ -1,0 +1,20 @@
+html
+  head
+    title Form
+  body
+    if error
+      p(style="color: red;")= error
+    form(action="/" method="POST" enctype="multipart/form-data")
+      label(for="text") Text:
+      input(type="text" id="text" name="text")
+      br
+      br
+      label(for="file1") File 1:
+      input(type="file" id="file1" name="file1")
+      br
+      br
+      label(for="file2") File 2:
+      input(type="file" id="file2" name="file2")
+      br
+      br
+      button(type="submit") Submit
